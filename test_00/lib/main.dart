@@ -8,15 +8,21 @@ void main() {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
+                Colors.blue,
                 Colors.black,
-                Colors.white,
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
           ),
           child: const Center(
-            child: Text('Mingalabar'),
+            child: Text(
+              'Hi Welcome!',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 25,
+              ),
+            ),
           ),
         ),
       ),
