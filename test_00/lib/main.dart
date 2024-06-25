@@ -1,24 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'package:test_00/Gradient.dart';
+
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            gradient: LinearGradient(
-              colors: [
-                Colors.black,
-                Colors.white,
-              ],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: const Center(
-            child: Text('Mingalabar'),
-          ),
-        ),
+        body: GradientContainer(),
       ),
     ),
   );
