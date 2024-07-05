@@ -14,15 +14,15 @@ class GradientContainer extends StatelessWidget {
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            Color.fromARGB(255, 127, 129, 255),
-            Color.fromARGB(255, 255, 229, 229),
+            Colors.black,
+            Colors.brown,
           ],
           begin: startAlignment,
           end: endAlignment,
         ),
       ),
       child: const Center(
-        child: StyleText('Hello Welcome")'),
+        child: StyleText('Hi'),
       ),
     );
   }
