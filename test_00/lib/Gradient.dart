@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'package:test_00/style_text.dart';
-
 const startAlignment = Alignment.topLeft;
 const endAlignment = Alignment.bottomRight;
 
 class GradientContainer extends StatelessWidget {
   const GradientContainer(this.color1, this.color2, {super.key});
+
+  const GradientContainer.color({super.key})
+      : color1 = const Color.fromARGB(255, 35, 255, 211),
+        color2 = const Color.fromARGB(255, 0, 251, 255);
 
   final Color color1;
   final Color color2;
@@ -21,8 +23,16 @@ class GradientContainer extends StatelessWidget {
           end: endAlignment,
         ),
       ),
-      child: const Center(
-        child: StyleText('Hi'),
+      child: Center(
+        child: Column(
+          children: [
+            Image.asset(
+              'assets/images/dice-1.png',
+              width: 100,
+            ),
+            TextButton(onPressed: () {}, child: const Text('Roll the Dice'))
+          ],
+        ),
       ),
     );
   }
