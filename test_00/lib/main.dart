@@ -4,7 +4,7 @@ import 'package:test_00/gradient.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
         body: GradientContainer.color(),
       ),

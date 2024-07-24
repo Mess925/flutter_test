@@ -10,7 +10,7 @@ class StyleText extends StatelessWidget {
     return Text(
       text,
       style: const TextStyle(
-        color: Colors.yellow,
+        color: Color.fromARGB(255, 214, 12, 12),
         fontSize: 18,
       ),
     );
